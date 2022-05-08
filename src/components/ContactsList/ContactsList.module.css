@@ -1,0 +1,22 @@
+.list {
+list-style: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+.item{
+  padding: 10px;;
+  display: flex;
+  justify-content: space-between;
+  align-items: centerl;
+ }
+  .item:first-child{
+padding-top: 20px;
+ }
+   .item:last-child{
+padding-bottom: 20px;
+ }
+ .text{
+  color: grey;
+  font-weight: 700;
+  font-size: 18px;
+}
