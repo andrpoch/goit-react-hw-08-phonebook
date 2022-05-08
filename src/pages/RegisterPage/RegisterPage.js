@@ -6,7 +6,7 @@ import s from './RegisterPage.module.css';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 
-export default function RegisterView() {
+export default function RegisterPage() {
   const dispatch = useDispatch();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');

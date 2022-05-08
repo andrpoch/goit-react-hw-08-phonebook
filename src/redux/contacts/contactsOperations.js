@@ -19,6 +19,7 @@ const fetchContacts = () => async dispatch => {
     dispatch(fetchContactsSuccess(data));
   } catch (error) {
     dispatch(fetchContactsError(error));
+     alert('Not Found');
   }
 };
 
@@ -35,6 +36,7 @@ const addContact = (name, number) => async dispatch => {
     dispatch(addContactSuccess(data));
   } catch (error) {
     dispatch(addContactError(error));
+     alert('Not Found');
   }
 };
 
@@ -46,6 +48,7 @@ const deleteContact = id => async dispatch => {
     dispatch(deleteContactSuccess(id));
   } catch (error) {
     dispatch(deleteContactError(error));
+    alert('Not Found');
   }
 };
 

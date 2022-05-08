@@ -6,7 +6,7 @@ import Filter from '../../components/FilterSearch/FilterSearch';
 import operations from '../../redux/contacts/contactsOperations';
 import s from './ContactsPage.module.css';
 
-export default function ContactsView() {
+export default function ContactsPage() {
   const dispatch = useDispatch();
 
   useEffect(() => dispatch(operations.fetchContacts()), [dispatch]);

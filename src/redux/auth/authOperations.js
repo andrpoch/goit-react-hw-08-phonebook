@@ -35,6 +35,7 @@ export const register = credentials => async dispatch => {
     dispatch(registerSuccess(response.data));
   } catch (error) {
     dispatch(registerError(error));
+     alert('Not Found');
   }
 };
 
@@ -48,6 +49,7 @@ export const logIn = credentials => async dispatch => {
     dispatch(loginSuccess(response.data));
   } catch (error) {
     dispatch(loginError(error));
+     alert('check the spelling is correct');
   }
 };
 
@@ -61,6 +63,7 @@ export const logOut = () => async dispatch => {
     dispatch(logoutSuccess());
   } catch (error) {
     dispatch(logoutError(error));
+     alert('check the spelling is correct');
   }
 };
 
@@ -83,5 +86,6 @@ export const getCurrentUser = () => async (dispatch, getState) => {
   } catch (error) {
     dispatch(getCurrentUserError(error));
     token.unset();
+     alert('check the spelling is correct');
   }
 };

@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 import s from './Auth.module.css';
 
-export default function AuthNav() {
+export default function Auth() {
   return (
     <div>
       <NavLink

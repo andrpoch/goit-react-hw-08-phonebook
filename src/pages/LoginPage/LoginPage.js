@@ -6,7 +6,7 @@ import s from './LoginPage.module.css';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 
-export default function LoginView() {
+export default function LoginPage() {
   const dispatch = useDispatch();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
